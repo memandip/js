@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Tic Tac Toe</title>
+	<style>
+
+		.container{
+			margin-left: 20%;
+			margin-right:20%;
+			background: #ae09c1;
+			height:auto;
+			border-radius: 50px; 
+			padding: 30px;
+		}
+
+		td{
+			height: 100px;
+			width: 100px;
+			border-radius: 	15px;
+			background: powderblue;
+		}
+		.checked{
+			background: transparent;
+		}
+		.X{
+			background-image:url('x.png');
+			opacity: .7; 
+		}
+		.O{
+			background-image:url('o.png');
+			opacity: .7;
+		}
+		table{
+			border:2px solid black;
+			border-radius: 10px;
+			padding: 5px;
+		}
+		select{
+			height: 30px;
+		}
+		button{
+			background: black;
+			color:white;
+			border-radius: 15px;
+			height: 30px;
+			width: 50%;
+		}
+	</style>
+</head>
+<body>
+	<div class="container">
+		<center>
+			<h1>Tic Tac Toe</h1>
+			<hr>
+			<h2 id="choose">Choose O or X 
+				<select id="opt" onchange="return choose(this.options[selectedIndex].value);">
+					<option value="">---</option>
+					<option value="O">O</option>
+					<option value="X">X</option>
+				</select>
+			</h2>
+			<h2 id="msg"></h2>
+			<h2 id="err"></h2>
+			<table border="1">
+				<tr>
+					<td id="11"></td>
+					<td id="12"></td>
+					<td id="13"></td>
+				</tr>
+				<tr>
+					<td id="21"></td>
+					<td id="22"></td>
+					<td id="23"></td>
+				</tr>
+				<tr>
+					<td id="31"></td>
+					<td id="32"></td>
+					<td id="33"></td>
+				</tr>
+			</table>
+
+			<br><br>
+			<button onclick="window.location.reload();">Reload</button>
+			
+		</center>
+		
+
+	</div>
+	
+
+	<script src="jquery.js"></script>
+	
+	<script src="scripts.js"></script>
+
+</body>
+</html>
