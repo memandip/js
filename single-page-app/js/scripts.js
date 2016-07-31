@@ -9,6 +9,13 @@ $(window).on('hashchange',function(e){
 
 });
 
+$('.nav li').on('click',function(){
+
+	$(this).siblings().removeClass('active');
+	$(this).addClass('active');
+
+});
+
 location.hash = '';
 
 location.hash = '#home';
