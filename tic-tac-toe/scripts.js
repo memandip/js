@@ -63,15 +63,15 @@ $(document).ready(function(){
 		}
 
 		if(typeof winner == 'undefined'
-			&& (spot11.hasClass('X') || spot11.hasClass('O'))
-			&& (spot12.hasClass('X') || spot12.hasClass('O'))
-			&& (spot13.hasClass('X') || spot13.hasClass('O'))
-			&& (spot21.hasClass('X') || spot21.hasClass('O'))
-			&& (spot22.hasClass('X') || spot22.hasClass('O'))
-			&& (spot23.hasClass('X') || spot23.hasClass('O'))
-			&& (spot31.hasClass('X') || spot31.hasClass('O'))
-			&& (spot32.hasClass('X') || spot32.hasClass('O'))
-			&& (spot33.hasClass('X') || spot33.hasClass('O'))
+			&& ( spot11.hasClass('X') || spot11.hasClass('O') )
+			&& ( spot12.hasClass('X') || spot12.hasClass('O') )
+			&& ( spot13.hasClass('X') || spot13.hasClass('O') )
+			&& ( spot21.hasClass('X') || spot21.hasClass('O') )
+			&& ( spot22.hasClass('X') || spot22.hasClass('O') )
+			&& ( spot23.hasClass('X') || spot23.hasClass('O') )
+			&& ( spot31.hasClass('X') || spot31.hasClass('O') )
+			&& ( spot32.hasClass('X') || spot32.hasClass('O') )
+			&& ( spot33.hasClass('X') || spot33.hasClass('O') )
 			){
 				$('#msg').html('All fields are filled. Nobody wins. Please reload.');
 				return;
